@@ -1,0 +1,4 @@
+FROM ruby:3.3.0
+WORKDIR /weather_app
+COPY . .
+RUN bundle install
