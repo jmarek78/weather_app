@@ -1,0 +1,20 @@
+<p> Enter your location to see the current weather </p>
+<%= form_tag({controller: "weather", action: "index"}, method: "get") do %>
+  <%= text_field_tag :location, params[:location] %>
+  <%= submit_tag("GO!")%>
+<% end %>
+
+<% if @weather %>
+  <p>Current Weather in <%= @weather.city.name %> </p>
+  <img src="<%= @weather.weather_conditions.icon %>">
+  <p>Temperature: <%= @weather.weather_conditions.temperature %>°F</p>
+  <p>Humidity: <%= @weather.weather_conditions.humidity %>%</p>
+  <p>Wind Speed: <%= @weather.weather_conditions.wind[:speed] * 3.6 %> mph</p>
+  <p>-</p>
+  <p>High: <%= @weather.weather_conditions.temp_max %>°F</p>
+  <p>Low: <%= @weather.weather_conditions.temp_min %>°F</p>
+  <p>-</p>
+  <p>Checked at: <%= @weather.weather_conditions.time.strftime("%k:%M %Z") %></p>
+<% elsif @error_msg %>
+  <p><%=@error_msg%></p>
+<% end %>

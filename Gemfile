@@ -2,6 +2,14 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
+gem 'openweathermap', '~> 0.2.3'
+
+gem 'actionpack-action_caching', '~> 1.2.2'
+
+gem 'dotenv', groups: [:development, :test]
+
+gem 'mocha', group: :test
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 
