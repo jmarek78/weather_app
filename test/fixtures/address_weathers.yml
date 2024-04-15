@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: 9.99
+  lon: 9.99
+  display_name: MyString
+  zip: 1
+  icon: MyString
+  temp: 1
+  humidity: 1
+  wind: 1
+  high: 1
+  low: 1
+  time: 2024-04-14 14:48:46
+
+two:
+  lat: 9.99
+  lon: 9.99
+  display_name: MyString
+  zip: 1
+  icon: MyString
+  temp: 1
+  humidity: 1
+  wind: 1
+  high: 1
+  low: 1
+  time: 2024-04-14 14:48:46

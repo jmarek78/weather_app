@@ -1,0 +1,2 @@
+class AddressWeather < ApplicationRecord
+end

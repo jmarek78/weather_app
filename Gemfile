@@ -4,9 +4,11 @@ ruby "3.3.0"
 
 gem 'openweathermap', '~> 0.2.3'
 
-gem 'actionpack-action_caching', '~> 1.2.2'
+gem "geocoder", "~> 1.8"
 
 gem 'dotenv', groups: [:development, :test]
+
+gem 'pry', groups: [:development, :test]
 
 gem 'mocha', group: :test
 
